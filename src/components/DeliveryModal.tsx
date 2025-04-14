@@ -6,8 +6,6 @@ import {
   DialogTitle,
   TextField,
   Button,
-  Typography,
-  Box,
   Stack,
 } from "@mui/material";
 import { LocalizationProvider } from "@mui/x-date-pickers/LocalizationProvider";
@@ -76,7 +74,7 @@ const DeliveryModal: React.FC<DeliveryModalProps> = ({
               onChange={onDateChange}
               slotProps={{
                 textField: {
-                  fullWidth: true, // Make the DatePicker full width
+                  fullWidth: true, 
                   size: "small",
                 },
               }}

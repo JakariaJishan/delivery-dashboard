@@ -26,7 +26,7 @@ import {
 import Sidebar from "./Sidebar";
 import { useDispatch } from "react-redux";
 import { useSelector } from "react-redux";
-import { RootState } from "../store/store.ts"; // Adjust the path to your store file
+import { RootState } from "../store/store.ts"; 
 import {
   addDelivery,
   setDeliveries,
@@ -40,7 +40,6 @@ import dayjs from "dayjs";
 
 type DeliveryStatus = "Pending" | "In Transit" | "Delivered" | "Not Delivered";
 
-// Define an interface for a Delivery
 interface Delivery {
   id: number;
   date: string;
@@ -142,7 +141,6 @@ const Delivery: React.FC = () => {
   if (error)
     return <Typography color="error">Error fetching deliveries.</Typography>;
 
-  // Handle opening the modal for adding a new delivery
   const handleAddDelivery = () => {
     setIsEditing(false);
     setCurrentDelivery({
@@ -243,7 +241,7 @@ const Delivery: React.FC = () => {
               open={mobileOpen}
               onClose={handleDrawerToggle}
               ModalProps={{
-                keepMounted: true, // Better open performance on mobile
+                keepMounted: true,
               }}
               sx={{
                 "& .MuiDrawer-paper": {

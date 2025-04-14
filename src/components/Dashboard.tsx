@@ -30,8 +30,8 @@ const theme = createTheme({
 
 const Dashboard: React.FC = () => {
   const { data, error, isLoading } = useGetDeliveriesQuery();
-  const isMobile = useMediaQuery(theme.breakpoints.down("sm")); // Detect mobile screens
-  const [mobileOpen, setMobileOpen] = useState(false); // State for mobile drawer
+  const isMobile = useMediaQuery(theme.breakpoints.down("sm"));
+  const [mobileOpen, setMobileOpen] = useState(false);
 
   const handleDrawerToggle = () => {
     setMobileOpen(!mobileOpen);
@@ -111,7 +111,7 @@ const Dashboard: React.FC = () => {
               open={mobileOpen}
               onClose={handleDrawerToggle}
               ModalProps={{
-                keepMounted: true, // Better open performance on mobile
+                keepMounted: true,
               }}
               sx={{
                 "& .MuiDrawer-paper": {
