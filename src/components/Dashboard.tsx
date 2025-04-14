@@ -23,7 +23,7 @@ import { useGetDeliveriesQuery } from "../store/deliveryapi.tsx";
 const theme = createTheme({
   palette: {
     primary: {
-      main: "#4d4dff",
+      main: "#2C80FF",
     },
   },
 });
