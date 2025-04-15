@@ -1,6 +1,9 @@
 # Delivery App Dashboard
 
 The **Delivery App Dashboard** is a web application designed to manage and track deliveries efficiently. It provides features such as delivery status tracking, adding new deliveries, editing existing ones, and deleting deliveries. The application is built using modern web technologies and follows best practices for scalability and maintainability.
+![image](https://github.com/user-attachments/assets/fb6dfb67-0ce4-46a8-b2ee-7db1b30feabd)
+![image](https://github.com/user-attachments/assets/99bf778c-d23e-468c-804f-a1ed032b14ab)
+
 
 ---
 
